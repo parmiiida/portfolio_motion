@@ -8,7 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import travel_app from "./travel_app.png"
 import blog from "./blog.png"
-
+import evently from "./Evently.png"
 import css from "./tech/css.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -31,6 +31,7 @@ import promptopia from "./promptopia.png"
 
 
 export {
+  evently,
   logoo,
   backend,
   creator,

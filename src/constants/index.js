@@ -18,6 +18,7 @@ import {
     udemy,
     metaversus,
     travel_app,
+    evently,
     threejs,
     javascriptMastery
   } from "../assets";
@@ -191,9 +192,34 @@ import {
       source_code_link: "https://github.com/parmiiida/Metaversus",
     },
     {
+      name: "Event_app",
+      description:
+        "Event app is fullstack nextjs application with commonly high-rated frameworks and libraries",
+      tags: [
+        {
+          name: "Nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "TypeSctript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwindcss",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Stripe",
+          color: "green-text-gradient",
+        }
+      ],
+      image: evently,
+      source_code_link: "https://github.com/parmiiida/event_app",
+    },
+    {
       name: "Travel_app",
       description:
-        "Metaversus is a modern Next13 website with Framer motion and tailwind css",
+        "Travel app is well UI designed website with a perfect User Interface which helps you have a perfect experience booking your travel",
       tags: [
         {
           name: "Nextjs",
@@ -214,7 +240,7 @@ import {
     {
       name: "Blog",
       description:
-        "Metaversus is a modern Next13 website with Framer motion and tailwind css",
+        "this is my small blog wroten with nextjs and tailwind with some useful information that helps you get to know me",
       tags: [
         {
           name: "Nextjs",
