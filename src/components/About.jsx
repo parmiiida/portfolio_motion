@@ -47,11 +47,9 @@ const About = () => {
       <motion.p
       variants={fadeIn('' ,'' ,0.1 ,1)}
       className='mt-4 text-secondary text-[17px] max-w-3xl loading-[30px]'>
-        I am a self-driven and motivated front-end developer <br/>
-        I have a wide knowledge of both web design &
-        development and would like to join a team of likeminded developers
-        I am continually evaluating and upgrading my skills so
-        that I can stay at the cutting edge of web development
+        I’m a skilled and creative Frontend Developer with strong expertise in building responsive, high-performance web
+         applications as a freelancer. I specialize in technologies like React, Next.js
+         , TypeScript, Tailwind CSS, and GSAP—bringing UI designs to life with clean code and smooth animations. With a deep understanding of both web design and development, I focus on crafting elegant, user-friendly interfaces that perform flawlessly across all devices.
       </motion.p>
 
       <div className='mt-20  flex flex-wrap justify-center gap-10'>
