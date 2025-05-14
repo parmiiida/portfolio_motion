@@ -18,9 +18,10 @@ import {
     udemy,
     metaversus,
     travel_app,
-    evently,
+    rickandmorty,
     threejs,
-    javascriptMastery
+    javascriptMastery,
+    awwards
   } from "../assets";
 
   export const navLinks = [
@@ -192,12 +193,12 @@ import {
       source_code_link: "https://github.com/parmiiida/Metaversus",
     },
     {
-      name: "Event_app",
+      name: "Rick and Morty",
       description:
-        "Event app is fullstack nextjs application with commonly high-rated frameworks and libraries",
+        "Rick and Morty website is one of my first examples of working with API and Redux useing Reactjs",
       tags: [
         {
-          name: "Nextjs",
+          name: "Reactjs",
           color: "blue-text-gradient",
         },
         {
@@ -209,12 +210,12 @@ import {
           color: "pink-text-gradient",
         },
         {
-          name: "Stripe",
+          name: "Redux",
           color: "green-text-gradient",
         }
       ],
-      image: evently,
-      source_code_link: "https://github.com/parmiiida/event_app",
+      image: rickandmorty,
+      source_code_link: "https://github.com/parmiiida/rick-morty",
     },
     {
       name: "Travel_app",
@@ -238,12 +239,37 @@ import {
       source_code_link: "https://github.com/parmiiida/travel-app",
     },
     {
+      name: "Awwards clone",
+      description:
+        "A cleanly animated website inspired by Awwwards, built using GSAP for smooth, modern transitions and interactions.",
+      tags: [
+        {
+          name: "React.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "TypeScript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwindcss",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Gsap",
+          color: "green-text-gradient",
+        },
+      ],
+      image: awwards,
+      source_code_link: "https://github.com/parmiiida/awwards-clone",
+    },
+    {
       name: "Blog",
       description:
         "this is my small blog wroten with nextjs and tailwind with some useful information that helps you get to know me",
       tags: [
         {
-          name: "Nextjs",
+          name: "Reactjs",
           color: "blue-text-gradient",
         },
         {

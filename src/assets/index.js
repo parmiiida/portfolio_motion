@@ -8,7 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import travel_app from "./travel_app.png"
 import blog from "./blog.png"
-import evently from "./Evently.png"
+import rickandmorty from "./rickandmorty.png"
 import css from "./tech/css.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -20,6 +20,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import redux from "./tech/redux.png";
+import awwards from "./awwards.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -31,7 +32,7 @@ import promptopia from "./promptopia.png"
 
 
 export {
-  evently,
+  rickandmorty,
   logoo,
   backend,
   creator,
@@ -58,5 +59,6 @@ export {
   blog,
   javascriptMastery,
   metaversus,
-  promptopia
+  promptopia,
+  awwards
 };
