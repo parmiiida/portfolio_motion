@@ -191,6 +191,7 @@ import {
       ],
       image: metaversus,
       source_code_link: "https://github.com/parmiiida/Metaversus",
+      web_link:"https://metaversus-8veu.vercel.app/"
     },
     {
       name: "Rick and Morty",
@@ -216,6 +217,8 @@ import {
       ],
       image: rickandmorty,
       source_code_link: "https://github.com/parmiiida/rick-morty",
+      web_link:"https://rick-morty-iota-teal.vercel.app/"
+
     },
     {
       name: "Travel_app",
@@ -237,6 +240,7 @@ import {
       ],
       image: travel_app,
       source_code_link: "https://github.com/parmiiida/travel-app",
+      web_link:"https://travel-app-chi-six.vercel.app/"
     },
     {
       name: "Awwards clone",
@@ -262,30 +266,9 @@ import {
       ],
       image: awwards,
       source_code_link: "https://github.com/parmiiida/awwards-clone",
+      web_link:"https://awwards-clone-two.vercel.app/"
+
     },
-    {
-      name: "Blog",
-      description:
-        "this is my small blog wroten with nextjs and tailwind with some useful information that helps you get to know me",
-      tags: [
-        {
-          name: "Reactjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "TypeScript",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Tailwindcss",
-          color: "pink-text-gradient",
-        },
-
-      ],
-      image: blog,
-      source_code_link: "https://github.com/parmiiida/Blog",
-    }
-
 
   ];
 

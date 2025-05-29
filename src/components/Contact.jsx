@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import toast, { Toaster } from 'react-hot-toast';
+
 
 
 import { styles } from "../styles";
@@ -13,7 +15,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    message: "",
+    messagee: "",
   });
   const[loading ,setLoading] = useState(false);
 
@@ -22,41 +24,39 @@ const Contact = () => {
     setForm({...form, [name] : value})
   }
 
-  const handleSubmit = (e) =>{
+  const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send('service_830asrp',
-    'template_c5wcvcv',
-    {
+    const templateParams = {
       from_name: form.name,
-      to_name: "Parmida Shoeibzade",
-      from_email: form.email,
-      to_email: "parmida.shoeibzade4@gmail.com",
-      message: form.message,
-    },
-    'QNjfNYYZuDZF1s6rT'
-    )
-    .then(
-      () => {
-        setLoading(false);
-        alert("Thank you. I will get back to you as soon as possible.");
+      to_name: "Parmida",
+      messagee: form.messagee,
+      reply_to: form.email,
+    };
 
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-        });
-      },
-      (error) => {
-        setLoading(false);
-        console.error(error);
+    console.log("Sending email with params:", templateParams); // ✅ Debug log
 
-        alert("Ahh, something went wrong. Please try again.");
-      }
-    );
+    emailjs
+      .send(
+       'service_fmmf9le', 'template_c5wcvcv', // ✅ Your template ID
+        templateParams,
+        "QNjfNYYZuDZF1s6rT" // ✅ Your public key
+      )
+      .then(
+        () => {
+          setLoading(false);
+          toast.success("Thank you! I'll get back to you ASAP.");
+          setForm({ name: "", email: "", messagee: "" });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          toast.error('Oops, something went wrong. Please try again.');
+        }
+      );
+  };
 
-  }
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -97,8 +97,8 @@ const Contact = () => {
               <span className="text-white font-medium mb-4">Your Message</span>
               <textarea
                 rows='7'
-                name="message"
-                value={form.message}
+                name="messagee"
+                value={form.messagee}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg
